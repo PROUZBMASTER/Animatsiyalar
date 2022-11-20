@@ -1,0 +1,57 @@
+body{
+    background: url(./img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+
+.oycha{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+ 
+}
+
+.img_moon{
+    transform: scale(2);
+}
+@keyframes moon {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.img_moon{
+    width: 300px;
+    animation: earth 40s infinite linear;
+}
+.kosmanovt{
+    display: flex;
+    justify-content: center;
+}
+
+.people{
+    width: 200px;
+    animation: people 10s infinite linear;
+}
+
+
+@keyframes people {
+    25%{
+        width: 100px;
+        left: 35%;
+        
+    }
+
+    50%{
+        width: 200px;
+        transform: translateX(100px);
+    }
+
+    75%{
+        width: 80px;
+        transform: translateY(-300px);
+    }
+}
+

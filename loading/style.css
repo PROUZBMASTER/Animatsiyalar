@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #000c18;
+}
+
+.loader {
+    color: rgba(240, 248, 255, 0.305);
+    text-align: center;
+    width: 200px;
+    height: 26px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    background:
+        linear-gradient(45deg,
+            transparent 49%, yellow 50%,
+            yellow 50%, transparent 51%),
+    linear-gradient(-45deg,
+        transparent 49%, yellow 50%,
+        yellow 50%, transparent 51%);
+    background-size: 1em 1em;
+    animation: 
+    load 0.5s linear infinite;
+}
+@keyframes load {
+    0% {
+        background-position: 1em 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

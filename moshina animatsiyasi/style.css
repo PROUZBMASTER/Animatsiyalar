@@ -1,0 +1,107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.hero
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/sky.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.highway
+{
+    height: 100px;
+    width: 400%;
+    display: block;
+    background-image: url(./img/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-repeat: repeat-x;
+    animation: highway 3s linear infinite;
+}
+@keyframes highway
+{
+    100%
+    {
+        transform: translateX(-3000px);
+    }
+}
+.city
+{
+    height: 250px;
+    width: 300%;
+    background-image: url(./img/city.png);
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes city
+{
+    100%
+    {
+        transform: translateX(-1400px);
+    }
+}
+.car
+{
+    width: 250px;
+    left: 30%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 2;
+}
+.car img
+{
+    width: 100%;
+    animation: car 2s linear infinite;
+}
+@keyframes car
+{
+    100%
+    {
+        transform: translateY(-20px);
+    }
+    50%
+    {
+        transform: translateY(50px);
+    }
+    0%
+    {
+        transform: translateY(-20px);
+    }
+}
+.samalyot{
+    margin-left: 150px;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 2;
+    animation: car 2s linear infinite;
+}
+@keyframes samalyot
+{
+    100%
+    {
+        transform: translateY(-20px);
+    }
+    50%
+    {
+        transform: translateY(50px);
+    }
+    0%
+    {
+        transform: translateY(-20px);
+    }
+}
